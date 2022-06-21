@@ -1,13 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Login from "./features/Login";
+import * as ReactDOMClient from "react-dom/client";
+import Routes from "./Router";
 import "./index.css";
-import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>
-);
-reportWebVitals();
+const container = document.getElementById("root");
+const root = ReactDOMClient.createRoot(container);
+root.render(<Routes />);
