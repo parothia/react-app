@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-app/static/css/main.651ad176.css",
-    "main.js": "/react-app/static/js/main.2258f00e.js",
+    "main.css": "/react-app/static/css/main.5d43f804.css",
+    "main.js": "/react-app/static/js/main.7807df2f.js",
     "static/media/minion.png": "/react-app/static/media/minion.ebd59771d447ba4a58a3.png",
     "index.html": "/react-app/index.html",
-    "main.651ad176.css.map": "/react-app/static/css/main.651ad176.css.map",
-    "main.2258f00e.js.map": "/react-app/static/js/main.2258f00e.js.map"
+    "main.5d43f804.css.map": "/react-app/static/css/main.5d43f804.css.map",
+    "main.7807df2f.js.map": "/react-app/static/js/main.7807df2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.651ad176.css",
-    "static/js/main.2258f00e.js"
+    "static/css/main.5d43f804.css",
+    "static/js/main.7807df2f.js"
   ]
 }
