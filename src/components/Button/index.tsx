@@ -17,15 +17,15 @@ export default function Button({
 }: ButtonProps) {
   return (
     <div
-      className={`${
+      className={`btn flex ${
         noShowBtn
-          ? "btn text-t-dark"
-          : "btn text-white bg-blue-less hover:bg-blue-more hover:cursor-pointer "
-      } align-middle rounded  font-medium  text-center`}
+          ? "text-t-dark "
+          : "text-white bg-blue-less hover:bg-blue-more hover:cursor-pointer w-32 px-6 py-3"
+      } align-middle rounded  font-medium  text-center `}
     >
       <button
         type="button"
-        className={`${noShowBtn} login font-semibold w-25 px-6 py-3`}
+        className={`${noShowBtn} login font-semibold`}
         id={testId}
         onClick={onClick}
       >
