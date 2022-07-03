@@ -1,10 +1,7 @@
 import React, { Reducer, useState } from "react";
 import codeImg from "../../images/code.svg";
-import Footer from "../Footer";
 import { useDispatch, useSelector } from "react-redux";
 import { LoginReducerState, LoginState } from "../store/featureSlice";
-import Navbar from "../navbar";
-
 const Home = (): JSX.Element => {
   const dispatch = useDispatch();
   const isLogin = useSelector(
@@ -33,7 +30,6 @@ const Home = (): JSX.Element => {
           <img src={codeImg} alt="code-img" />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
