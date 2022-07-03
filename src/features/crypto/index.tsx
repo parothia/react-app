@@ -1,9 +1,8 @@
 import axios from "axios";
-import { log } from "console";
 import React from "react";
 import Button from "../../components/Button";
 
-function CryptoApp() {
+function Crypto() {
   const checkStatus = "https://api.coingecko.com/api/v3/ping";
   const callApi = () => {
     axios
@@ -19,4 +18,4 @@ function CryptoApp() {
   );
 }
 
-export default CryptoApp;
+export default Crypto;

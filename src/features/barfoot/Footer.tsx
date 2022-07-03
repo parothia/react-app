@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer-main bg-blue-more">
+    <div className="footer-main bg-blue-more mt-8">
       <div className="footer px-8">
         <div className="inner-footer py-8">
           <ul className="ul-flex flex justify-between">
