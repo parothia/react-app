@@ -26,7 +26,7 @@ const Home = (): JSX.Element => {
             fully customizable. Free for personal as well as commercial use.
           </p>
         </div>
-        <div className="content-right px-28">
+        <div className="content-right min-w[30%]">
           <img src={codeImg} alt="code-img" />
         </div>
       </div>
