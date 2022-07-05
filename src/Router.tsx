@@ -8,12 +8,12 @@ import Navbar from "./features/barfoot/Navbar";
 import Footer from "./features/barfoot/Footer";
 function Rasta() {
   return (
-    <div className="main p-8 w-screen min-h-screen min-w-full flex flex-col justify-between">
+    <div className="main p-8 w-screen min-h-screen flex flex-col justify-between min-w-[450px] overflow-auto">
       <Provider store={store}>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/crypto" element={<Crypto />} />
+          <Route path="react-app/" element={<Home />} />
+          <Route path="react-app/crypto" element={<Crypto />} />
         </Routes>
         <Footer />
       </Provider>
