@@ -28,11 +28,11 @@ export default function Button({
     <div
       className={`${
         noStyle ? "nostyle" : style
-      } align-middle rounded  font-medium`}
+      } align-middle rounded  font-medium flex justify-center`}
     >
       <button
         type="button"
-        className={`${noStyle ? "nostyle my-3" : inStyle} font-semibold `}
+        className={`${noStyle ? "nostyle my-3" : inStyle} font-semibold  `}
         id={testId}
         onClick={onClick}
       >

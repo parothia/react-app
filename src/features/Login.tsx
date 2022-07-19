@@ -57,8 +57,8 @@ const Login = () => {
         {/* <div className="logo mb-4">
         <img src={logo} alt="logo" className="logo w-14 pr-4 mx-auto" />
       </div> */}
-        <div className="form-card box-border">
-          <div className="color-outer bg-slate-300 w-1/3 p-4 m-auto rounded">
+        <div className="form-card box-border mx-auto my-8 px-2">
+          <div className="color-outer bg-slate-300 p-4 rounded">
             <div className="heading justify-center">
               <div className="close-img right-0">
                 <Close onclose={handleClose} />
@@ -67,7 +67,7 @@ const Login = () => {
                 Sign in to Parothia
               </div>
             </div>
-            <div className="form-card-inner mx-11 w-80 sm:w-96 px-4 sm:px-8 py-8 sm:py-8 border-solid border-2 rounded border-slate-300 bg-slate-200 shadow-xl">
+            <div className="form-card-inner mx-2 sm:mx-6 min-w-80 sm:w-96 px-4 sm:px-8 py-8 sm:py-8 border-solid border-2 rounded border-slate-300 bg-slate-200 shadow-xl">
               <TextBox
                 label="Username or email address "
                 placeholder="Email"
@@ -88,7 +88,7 @@ const Login = () => {
                 onClick={formik.handleSubmit}
               />
             </div>
-            <div className="new-account text-center ml-11 pr-11 my-4 w-80 sm:w-96 py-4 border-solid border-2 rounded border-slate-300 bg-slate-200 shadow-xl">
+            <div className="new-account text-center mx-2 sm:mx-6 pr-11 my-4 sm:w-96 py-4 border-solid border-2 rounded border-slate-300 bg-slate-200 shadow-xl">
               New to Parothia?
               <span className="create-account text-blue-less">
                 <button id="btn-sign-n" onClick={handleNewSignIn}>
