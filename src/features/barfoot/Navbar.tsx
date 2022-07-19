@@ -7,7 +7,7 @@ import { LoginReducerState } from "../store/featureSlice";
 import * as Actions from "../store/featureSlice";
 import Login from "../Login";
 import NewUser from "../NewUser";
-
+import "./Navbar.css";
 function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -20,16 +20,20 @@ function Navbar() {
   );
   const handleLogin = () => {
     dispatch(Actions.setLogin(isLogin));
+    setShowFeatList(false);
   };
 
   const handleNewSignIn = () => {
     dispatch(Actions.setNewLogin(isNewLogin));
+    setShowFeatList(false);
   };
 
   const handleCrypto = () => {
+    setShowFeatList(false);
     navigate("/react-app/crypto");
   };
   const handleHome = () => {
+    setShowFeatList(false);
     navigate("/react-app");
   };
 
@@ -51,7 +55,9 @@ function Navbar() {
         />
       </div>
       <div
-        className="p-4 space-y-2 bg-blue-less rounded shadow absolute right-4 sm:hidden hover:cursor-pointer z-10"
+        className={`p-4 space-y-2 bg-blue-less rounded shadow absolute ${
+          showFeatList ? "shake-lr" : ""
+        } right-4 sm:hidden hover:cursor-pointer z-10`}
         onClick={showFeatures}
       >
         <span className="block w-12 h-0.5 bg-gray-100 animate-pulse"></span>
@@ -59,14 +65,14 @@ function Navbar() {
         <span className="block w-12 h-0.5 bg-gray-100 animate-pulse"></span>
       </div>
       <div
-        className={`right-list  sm:block bg-blue-less sm:bg-almost-white sm:static absolute rounded  right-4 top-3 ml-[20%  ] min-w-[50%] ${
+        className={`right-list  sm:block bg-blue-less absolute sm:bg-almost-white sm:static rounded top-20 min-w-full sm:min-w-[70%] ${
           showFeatList ? "block " : "hidden"
         } `}
       >
         <ul className="list sm:flex">
           <li className="li1 text-center w-full mr-6 whitespace-nowrap border-b-2 border-white text-white sm:text-black">
             <Button
-              noShowBtn
+              // noShowBtn
               noStyle
               btnName="About Me"
               testId="login"

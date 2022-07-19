@@ -53,10 +53,10 @@ const NewUser = () => {
   });
 
   return (
-    <div className="login-card box-border fixed top-20 left-0 w-full z-99">
+    <div className="login-card box-border fixed top-20 left-0 w-full z-99 min-h-fit">
       <div className="form-container flex flex-col justify-center ">
-        <div className="form-card box-border">
-          <div className="color-outer bg-slate-300 w-1/3 p-4 m-auto rounded">
+        <div className="form-card box-border mx-auto my-8 px-2">
+          <div className="color-outer bg-slate-300 p-4 m-auto rounded">
             <div className="heading justify-center">
               <div className="close-img right-0">
                 <Close onclose={handleClose} />
@@ -65,7 +65,7 @@ const NewUser = () => {
                 Welcome to Parothia
               </div>
             </div>
-            <div className="form-card-inner ml-11 w-80 sm:w-96 px-4 sm:px-8 py-8 sm:py-8 border-solid border-2 rounded border-slate-300 bg-slate-200 shadow-xl">
+            <div className="form-card-inner mx-2 sm:mx-6 w-80 sm:w-96 px-4 sm:px-8 py-8 sm:py-8 border-solid border-2 rounded border-slate-300 bg-slate-200 shadow-xl">
               <TextBox
                 label="Email address "
                 placeholder="Email"
