@@ -28,6 +28,10 @@ function Navbar() {
     setShowFeatList(false);
   };
 
+  const handleLQA = () => {
+    navigate("/react-app/lqa");
+  };
+
   const handleCrypto = () => {
     setShowFeatList(false);
     navigate("/react-app/crypto");
@@ -43,7 +47,7 @@ function Navbar() {
     setShowFeatList(!showFeatList);
   };
   return (
-    <div className="navbar flex justify-between items-center mb-4 relative">
+    <div className="navbar flex justify-between items-center mb-4 relative border-b-2 border-blue-more">
       {isLogin && <Login />}
       {isNewLogin && <NewUser />}
       <div className="left-bar">
@@ -86,6 +90,15 @@ function Navbar() {
               btnName="Crypto"
               testId="Crypto"
               onClick={handleCrypto}
+            />
+          </li>
+          <li className="li1 text-center w-full mr-6 border-b-2 border-white text-white sm:text-black">
+            <Button
+              noShowBtn
+              noStyle
+              btnName="LQA"
+              testId="qa"
+              onClick={handleLQA}
             />
           </li>
           <li className="li1 text-center w-full sm:mr-6 btn border-b-2 border-white text-white sm:text-black">

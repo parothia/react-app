@@ -5,7 +5,7 @@ import TextBox from "../components/Textbox/Textbox";
 import logo from "../images/minion.png";
 import axios from "axios";
 import { hostname } from "os";
-import Close from "../components/close";
+import Close from "../components/Close";
 import { useDispatch, useSelector } from "react-redux";
 import * as Actions from "./store/featureSlice";
 import { LoginReducerState } from "./store/featureSlice";
